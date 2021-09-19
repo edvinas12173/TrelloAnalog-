@@ -1,3 +1,5 @@
+<img alt="Trello Analog" src="https://github.com/edvinas12173/TrelloA/blob/master/Trelloanalog.gif?raw=true"/>
+
 ## How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) (which comes with [npm](https://www.npmjs.com/)) installed on your computer.
@@ -19,4 +21,8 @@ $ php artisan migrate
 # Run the app
 $ php artisan serve
 ```
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
