@@ -8,7 +8,7 @@ From your command line:
 
 ```
 # Clone this repository
-$ git clone https://github.com/edvinas12173/TrelloA.git
+$ git clone https://github.com/edvinas12173/TrelloAnalog-.git
 
 # Go into the repository
 $ cd TrelloAnalog-
