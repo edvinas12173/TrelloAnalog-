@@ -11,7 +11,7 @@ From your command line:
 $ git clone https://github.com/edvinas12173/TrelloA.git
 
 # Go into the repository
-$ cd TrelloA
+$ cd TrelloAnalog-
 
 # Install dependencies
 $ npm install
