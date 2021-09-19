@@ -22,6 +22,12 @@ $ php artisan migrate
 $ php artisan serve
 ```
 
+## Built With
+
+- [Laravel](https://laravel.com/)
+- [VueJS](https://vuejs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
