@@ -1,5 +1,5 @@
 ## Trello Analog
-<img alt="Trello Analog" src=""/>
+<img alt="Trello Analog" src="https://github.com/edvinas12173/Trello-Analog/blob//Trelloanalog.gif?raw=true"/>
 
 ## How To Use
 
