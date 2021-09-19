@@ -8,10 +8,10 @@
             <div class="card-body bg-light">
                 <form @submit.prevent="addNewDesk">
                     <div class="input-group">
-                        <input type="text" v-model="name" class="form-control" :class="{ 'is-invalid': $v.name.$error }" placeholder="Enter Desk name">
-                        <button type="submit" class="btn btn-success">Add new desk</button>
+                        <input type="text" v-model="name" class="form-control" :class="{ 'is-invalid': $v.name.$error }" placeholder="Enter a desk name">
+                        <button type="submit" class="btn btn-success">Add a new desk</button>
                         <div class="invalid-feedback" v-if="!$v.name.required">
-                            Enter the <b>Desk</b> name!
+                            Enter a <b>desk</b> name!
                         </div>
                         <div class="invalid-feedback" v-if="!$v.name.maxLength">
                             Max of <b>{{$v.name.$params.maxLength.max}}</b> symbols!
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="alert alert-danger" role="alert" v-if="errored">
-            Error for load data! <br>
+            Error of load data! <br>
         </div>
         <div class="row">
             <div class="col-lg-4" v-for="desk in desks">

@@ -5,7 +5,7 @@
               <input type="text" v-model="name" class="form-control" :class="{ 'is-invalid': $v.name.$error }">
               <button type="submit" class="btn" @click="saveName"><i class="fas fa-times"></i></button>
               <div class="invalid-feedback" v-if="!$v.name.required">
-                  Enter the <b>Desk</b> name!
+                  Enter a <b>desk</b> name!
               </div>
               <div class="invalid-feedback" v-if="!$v.name.maxLength">
                   Max of <b>{{$v.name.$params.maxLength.max}}</b> symbols!
@@ -19,10 +19,10 @@
           <div class="card-body bg-light">
               <form @submit.prevent="addNewDeskList">
                   <div class="input-group">
-                      <input type="text" v-model="desk_list_name" class="form-control" :class="{ 'is-invalid': $v.desk_list_name.$error }" placeholder="Enter Desk List name">
-                      <button type="submit" class="btn btn-success">Add new desk list</button>
+                      <input type="text" v-model="desk_list_name" class="form-control" :class="{ 'is-invalid': $v.desk_list_name.$error }" placeholder="Enter a desk list name">
+                      <button type="submit" class="btn btn-success">Add a new desk list</button>
                       <div class="invalid-feedback" v-if="!$v.desk_list_name.required">
-                          Enter the <b>Desk List</b> name!
+                          Enter a <b>desk list</b> name!
                       </div>
                       <div class="invalid-feedback" v-if="!$v.desk_list_name.maxLength">
                           Max of <b>{{$v.desk_list_name.$params.maxLength.max}}</b> symbols!
@@ -32,7 +32,7 @@
           </div>
       </div>
       <div class="alert alert-danger" role="alert" v-if="errored">
-          Error for load data!
+          Error of load data!
       </div>
       <div class="row">
           <div class="col-lg-4" v-for="(desk_list, index) in desk_lists">
@@ -58,9 +58,9 @@
                   </div>
                   <a class="card-body">
                       <form @submit.prevent="addNewCard(desk_list.id)">
-                          <input type="text" v-model="card_names[desk_list.id]" class="form-control" placeholder="Enter card name" :class="{ 'is-invalid': $v.card_names.$each[desk_list.id].$error }">
+                          <input type="text" v-model="card_names[desk_list.id]" class="form-control" placeholder="Enter a card name" :class="{ 'is-invalid': $v.card_names.$each[desk_list.id].$error }">
                           <div class="invalid-feedback" v-if="!$v.card_names.$each[desk_list.id].required">
-                              Enter the <b>Card</b> name!
+                              Enter a <b>card</b> name!
                           </div>
                           <div class="invalid-feedback" v-if="!$v.card_names.$each[desk_list.id].maxLength">
                               Max of <b>{{$v.card_names.$each[desk_list.id].$params.maxLength.max}}</b> symbols!
@@ -89,7 +89,7 @@
                                               <input type="text" v-model="current_card.name" class="form-control" :class="{ 'is-invalid': $v.current_card.name.$error }">
                                               <button type="submit" class="btn" @click="updateCardName"><i class="fas fa-times"></i></button>
                                               <div class="invalid-feedback" v-if="!$v.current_card.name.required">
-                                                  Enter the <b>Card</b> name!
+                                                  Enter a <b>card</b> name!
                                               </div>
                                               <div class="invalid-feedback" v-if="!$v.current_card.name.maxLength">
                                                   Max of <b>{{$v.current_card.name.$params.maxLength.max}}</b> symbols!
@@ -106,7 +106,7 @@
                                           <div v-if="task_input_name_id == task.id" >
                                               <form @submit.prevent="updateTask(current_card.tasks[index])">
                                                   <div class="input-group">
-                                                      <input type="text" v-model="current_card.tasks[index].name" class="form-control" placeholder="Enter Task name">
+                                                      <input type="text" v-model="current_card.tasks[index].name" class="form-control" placeholder="Enter a task name">
                                                       <button type="submit" class="btn" @click="updateTask(current_card.tasks[index])"><i class="fas fa-times"></i></button>
                                                   </div>
                                               </form>
@@ -123,10 +123,10 @@
                                       </div>
                                       <form @submit.prevent="addNewTask" class="mt-3">
                                           <div class="input-group">
-                                              <input type="text" v-model="new_task_name" class="form-control" :class="{ 'is-invalid': $v.new_task_name.$error }" placeholder="Enter Task name">
-                                              <button type="submit" class="btn btn-success">Add new task</button>
+                                              <input type="text" v-model="new_task_name" class="form-control" :class="{ 'is-invalid': $v.new_task_name.$error }" placeholder="Enter a task name">
+                                              <button type="submit" class="btn btn-success">Add a new task</button>
                                               <div class="invalid-feedback" v-if="!$v.new_task_name.required">
-                                                  Enter the <b>Task</b> name!
+                                                  Enter a <b>task</b> name!
                                               </div>
                                               <div class="invalid-feedback" v-if="!$v.new_task_name.maxLength">
                                                   Max of <b>{{$v.new_task_name.$params.maxLength.max}}</b> symbols!
