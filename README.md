@@ -1,4 +1,5 @@
-<img alt="Trello Analog" src="https://github.com/edvinas12173/TrelloA/blob/master/Trelloanalog.gif?raw=true"/>
+## Trello Analog
+<img alt="Trello Analog" src="https://github.com/edvinas12173/Trello-Analog/blob/master/Trelloanalog.gif?raw=true"/>
 
 ## How To Use
 
@@ -27,6 +28,15 @@ $ php artisan serve
 - [Laravel](https://laravel.com/)
 - [VueJS](https://vuejs.org/)
 - [Bootstrap](https://getbootstrap.com/)
+
+## 🤝 Support
+
+> Contributions, issues, and feature requests are welcome! <br>
+Give a ⭐️ if you like this project!
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
 ## License
 
