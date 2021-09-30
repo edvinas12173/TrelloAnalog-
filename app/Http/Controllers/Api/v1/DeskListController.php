@@ -24,6 +24,9 @@ class DeskListController extends Controller
         return DeskListResource::collection(
             DeskList::orderBy('created_at', 'desc')
                 ->where('desk_id', $request->desk_id)
+                ->with(['cards' => function ($query) {
+                    $query->orderBy('created_at', 'DESC');
+                }])
                 ->get()
         );
 
